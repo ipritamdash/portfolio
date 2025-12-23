@@ -1,0 +1,39 @@
+/* Minimal Outline Buttons */
+.md-typeset .md-button {
+  background-color: transparent;
+  color: var(--md-accent-fg-color);
+  border: 1px solid var(--md-accent-fg-color);
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.md-typeset .md-button:hover {
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-default-bg-color); /* Text becomes dark on hover */
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-default-bg-color);
+  border: 1px solid var(--md-accent-fg-color);
+}
+
+/* Fix "Squished" Text - Reset to normal */
+body,
+.md-typeset {
+  letter-spacing: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700 !important;
+}
+
+/* Hide empty sidebar on large screens */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    display: none;
+  }
+}
