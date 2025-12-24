@@ -37,3 +37,27 @@ h3 {
     display: none;
   }
 }
+
+/* --- Theme Toggle Animation & Styling --- */
+
+/* Smooth transition for the header icons */
+.md-header__button.md-icon {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s;
+}
+
+/* Rotate and scale slightly on hover for a "tactile" feel */
+.md-header__button.md-icon:hover {
+  transform: scale(1.15) rotate(15deg);
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* Warm Yellow for Sun (Visible in Dark Mode) */
+[data-md-color-scheme="slate"] .md-header__button[for="__palette_1"] {
+  color: #fbbf24;
+}
+
+/* Indigo/Blue for Moon (Visible in Light Mode) */
+[data-md-color-scheme="default"] .md-header__button[for="__palette_0"] {
+  color: #6366f1;
+}
