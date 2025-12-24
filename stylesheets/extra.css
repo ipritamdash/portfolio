@@ -1,25 +1,4 @@
-/* Minimal Outline Buttons */
-.md-typeset .md-button {
-  background-color: transparent;
-  color: var(--md-accent-fg-color);
-  border: 1px solid var(--md-accent-fg-color);
-  border-radius: 4px;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.md-typeset .md-button:hover {
-  background-color: var(--md-accent-fg-color);
-  color: var(--md-default-bg-color); /* Text becomes dark on hover */
-}
-
-.md-typeset .md-button--primary {
-  background-color: var(--md-accent-fg-color);
-  color: var(--md-default-bg-color);
-  border: 1px solid var(--md-accent-fg-color);
-}
-
-/* Fix "Squished" Text - Reset to normal */
+/* --- Global Typography & Layout --- */
 body,
 .md-typeset {
   letter-spacing: normal;
@@ -31,33 +10,105 @@ h3 {
   font-weight: 700 !important;
 }
 
-/* Hide empty sidebar on large screens */
-@media screen and (min-width: 76.25em) {
-  .md-sidebar--primary {
-    display: none;
-  }
+/* --- Minimal Outline Buttons --- */
+.md-typeset .md-button {
+  background-color: transparent;
+  color: var(--md-accent-fg-color);
+  border: 1px solid var(--md-accent-fg-color);
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
-/* --- Theme Toggle Animation & Styling --- */
+.md-typeset .md-button:hover {
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-default-bg-color);
+}
 
-/* Smooth transition for the header icons */
+.md-typeset .md-button--primary {
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-default-bg-color);
+  border: 1px solid var(--md-accent-fg-color);
+}
+
+/* --- Theme Toggle Animation --- */
 .md-header__button.md-icon {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s;
 }
 
-/* Rotate and scale slightly on hover for a "tactile" feel */
 .md-header__button.md-icon:hover {
   transform: scale(1.15) rotate(15deg);
   opacity: 0.9;
   cursor: pointer;
 }
 
-/* Warm Yellow for Sun (Visible in Dark Mode) */
 [data-md-color-scheme="slate"] .md-header__button[for="__palette_1"] {
   color: #fbbf24;
 }
 
-/* Indigo/Blue for Moon (Visible in Light Mode) */
 [data-md-color-scheme="default"] .md-header__button[for="__palette_0"] {
   color: #6366f1;
+}
+
+/* --- NEW: Technical "System" Cards --- */
+.system-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.system-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none !important;
+  background: transparent;
+  /* Thin, subtle border for that "blueprint" look */
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0px; /* Sharp corners for technical feel */
+  padding: 1.5rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover: Highlight Border Only (No shadow/glow) */
+.system-card:hover {
+  border-color: var(--md-accent-fg-color);
+  transform: translateY(-2px);
+}
+
+.card-header h3 {
+  margin: 0 !important;
+  font-size: 1.1rem;
+  color: var(--md-typeset-color);
+}
+
+/* Tech Stack: Monospace font, smaller, dimmed */
+.tech-tag {
+  display: block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  color: var(--md-accent-fg-color);
+  margin-top: 0.4rem;
+  opacity: 0.9;
+}
+
+.system-card p {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  color: var(--md-typeset-color);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.link-arrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--md-typeset-color);
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.system-card:hover .link-arrow {
+  opacity: 1;
+  color: var(--md-accent-fg-color);
 }
