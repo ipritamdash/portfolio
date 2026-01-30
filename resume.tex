@@ -1,0 +1,213 @@
+%-------------------------
+% Resume - AI/ML Engineer
+% Author : Pritam Dash
+% Template: Jake's Resume (FAANG Standard)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+% Ensure PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Pritam Dash} \\ \vspace{1pt}
+    \small +91-8527218608 $|$ \href{mailto:ipritamdash@gmail.com}{\underline{ipritamdash@gmail.com}} $|$
+    \href{https://linkedin.com/in/pritam-dash}{\underline{LinkedIn}} $|$
+    \href{https://github.com/ipritamdash}{\underline{GitHub}} $|$
+    \href{https://ipritamdash.github.io/portfolio/}{\underline{Portfolio}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ML Engineering Advisor}{Oct 2025 -- Present}
+      {HeyMaya (Meshly Technologies)}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built conversational AI platform serving 150K+ users on WhatsApp with 200ms response times, automating HR recruitment workflows}
+        \resumeItem{Trained and deployed language model on AWS SageMaker achieving 97\% conversation accuracy across 10K+ daily interactions}
+        \resumeItem{Reduced monthly cloud infrastructure costs by 40\% through model optimization while maintaining production quality}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Development Engineer Intern}{Jan 2025 -- Jun 2025}
+      {Hero MotoCorp}{Gurugram, India}
+      \resumeItemListStart
+        \resumeItem{Automated invoice reconciliation system processing 500+ monthly invoices, reducing manual review time by 60\%}
+        \resumeItem{Built React validation dashboard cutting batch processing time from 45 minutes to 12 minutes}
+        \resumeItem{Optimized SQL queries and database indexing, improving dashboard load times from 8.2s to 1.3s}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Analyst Intern}{May 2024 -- Jul 2024}
+      {Ennovations Techserve}{Noida, India}
+      \resumeItemListStart
+        \resumeItem{Automated ETL workflows for 50K+ records using Zoho Analytics, eliminating 80\% of manual data entry}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Technical Head}{Dec 2023 -- Jun 2025}
+      {AIEC, IITM}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Directed 46-hour hackathon for 1,200+ participants with zero infrastructure downtime}
+        \resumeItem{Conducted 8 ML workshops for 300+ students; mentored 15 teams with 5 reaching production deployment}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python} \\
+     \textbf{ML/DL Frameworks}{: PyTorch, TensorFlow, Hugging Face Transformers} \\
+     \textbf{LLM \& Gen AI}{: LangChain, LangGraph, LlamaIndex, Pinecone, FAISS} \\
+     \textbf{Agent Frameworks}{: CrewAI, AutoGen, n8n, Ollama} \\
+     \textbf{Deep Learning Architectures}{: Transformers, CNNs, RNNs, LSTMs, GRUs, Attention Mechanisms} \\
+     \textbf{Cloud \& Deployment}{: AWS, Docker, FastAPI}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Maya} $|$ \emph{Real-time conversational voice assistant}}{}
+          \resumeItemListStart
+            \resumeItem{Developed conversational voice AI achieving 1.35s end-to-end response time, 2.5x faster than industry baseline}
+            \resumeItem{Implemented GPU optimizations reducing audio generation time by 85\%, enabling natural real-time conversations}
+            \resumeItem{Integrated speech recognition, language model, and neural voice synthesis into unified streaming pipeline}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{HeyMaya} $|$ \emph{Production LLM platform for HR automation}}{}
+          \resumeItemListStart
+            \resumeItem{Trained conversational AI on 50K+ HR dialogues; deployed to production serving 150K+ active users}
+            \resumeItem{Optimized inference pipeline achieving 200ms p95 latency for real-time conversations on mobile networks}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Indian Classical Music Separation} $|$ \emph{Deep learning for audio source separation}}{}
+          \resumeItemListStart
+            \resumeItem{Trained audio source separation model achieving 12.45 dB SDR, outperforming Meta's Demucs by 53\%}
+            \resumeItem{Designed custom loss function for harmonically complex Indian instruments, trained on consumer-grade GPU}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Research Assistant API} $|$ \emph{Semantic search over academic papers}}{}
+          \resumeItemListStart
+            \resumeItem{Built semantic search API over research papers improving LLM answer accuracy by 60\% through context retrieval}
+            \resumeItem{Implemented vector database with FAISS enabling sub-100ms similarity search across 10K+ documents}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Leadership}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{1st Place} AI/ML Hackathon (200+ participants, 2024) | \textbf{Speaker} ED Talk World Conference 2024 | \textbf{Technical Head} AIEC organizing 8 ML workshops for 300+ students
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Maharshi Dayanand University}{New Delhi, India}
+      {Bachelor of Computer Applications}{2025}
+    \resumeSubheading
+      {Central Board of Secondary Education (CBSE)}{New Delhi, India}
+      {Senior Secondary - 84\%}{2021}
+    \resumeSubheading
+      {Central Board of Secondary Education (CBSE)}{New Delhi, India}
+      {Secondary - 92\%}{2019}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

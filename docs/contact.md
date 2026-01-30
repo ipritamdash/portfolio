@@ -1,15 +1,64 @@
-# Contact & Resume
+---
+hide:
+  - navigation
+  - toc
+---
 
-## Resume
+# Let's Connect
 
-[Download My Resume (PDF)](resume.pdf){ .md-button .md-button--primary }
+I'm open to opportunities in AI/ML Engineering, research collaborations, and technical discussions.
 
-_(Note: Ensure you have a file named `resume.pdf` in your docs folder)_
+## 📧 Contact Information
+
+<div class="contact-grid">
+
+<a href="mailto:ipritamdash@gmail.com" class="contact-card email">
+<span class="contact-icon">📧</span>
+<div class="contact-content">
+<strong>Email</strong>
+<p>ipritamdash@gmail.com</p>
+</div>
+</a>
+
+<a href="https://github.com/ipritamdash" class="contact-card github" target="_blank">
+<span class="contact-icon">💻</span>
+<div class="contact-content">
+<strong>GitHub</strong>
+<p>@ipritamdash</p>
+</div>
+</a>
+
+<a href="https://linkedin.com/in/pritam-dash" class="contact-card linkedin" target="_blank">
+<span class="contact-icon">💼</span>
+<div class="contact-content">
+<strong>LinkedIn</strong>
+<p>/in/pritam-dash</p>
+</div>
+</a>
+
+<div class="contact-card location">
+<span class="contact-icon">📍</span>
+<div class="contact-content">
+<strong>Location</strong>
+<p>New Delhi, India</p>
+</div>
+</div>
+
+</div>
+
+## 📄 Resume
+
+[Download Resume (PDF)](resume.pdf){ .md-button .md-button--primary }
+
+## 🟢 Availability
+
+Currently **open to full-time opportunities** in AI/ML Engineering roles. Particularly interested in:
+
+- Production ML Systems
+- LLM/GenAI Engineering
+- Real-time AI Applications
+- ML Infrastructure & Optimization
 
 ---
 
-## Get in Touch
-
-- **Email:** [ipritamdash@gmail.com](mailto:ipritamdash@gmail.com)
-- **GitHub:** [github.com/ipritamdash](https://github.com/ipritamdash)
-- **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com)
+**Response Time:** I typically respond within 24 hours on weekdays.
