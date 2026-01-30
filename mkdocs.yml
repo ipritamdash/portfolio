@@ -1,112 +1,51 @@
 site_name: Pritam Dash
 site_url: https://ipritamdash.github.io/portfolio/
-site_description: AI Engineer specializing in production ML systems, real-time inference optimization, and deep learning deployment
 repo_url: https://github.com/ipritamdash/portfolio
 repo_name: ipritamdash
 
 theme:
   name: material
-  language: en
+  # custom_dir: overrides (Keep this commented out)
   palette:
-    # Dark Mode
+    # Dark Mode (Slate + Cyan) - The "Developer" Look
     - scheme: slate
       primary: black
-      accent: teal
+      accent: cyan
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-    # Light Mode
+        icon: material/toggle-switch
+        name: Switch to Light Mode
+    # Light Mode (White + Indigo) - The "Paper" Look
     - scheme: default
       primary: white
       accent: indigo
       toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
+        icon: material/toggle-switch-off-outline
+        name: Switch to Dark Mode
   features:
-    - navigation.instant  # Fast page loads (SPA-like)
-    - navigation.tracking  # URL updates as you scroll
-    - navigation.tabs  # Top-level tabs
-    - navigation.top  # Back to top button
-    - navigation.indexes  # Section index pages
-    - search.suggest  # Search autocomplete
-    - search.highlight  # Highlight search terms
-    - content.code.copy  # Copy code blocks
-    - content.code.annotate  # Code annotations
-
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
   font:
-    text: Inter
+    text: Plus Jakarta Sans
     code: JetBrains Mono
-
-  icon:
-    repo: fontawesome/brands/github
 
 extra_css:
   - stylesheets/extra.css
 
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/ipritamdash
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/pritam-dash
-    - icon: fontawesome/solid/envelope
-      link: mailto:ipritamdash@gmail.com
-
-  analytics:
-    provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-
 nav:
   - Home: index.md
-  - Projects: projects/index.md
-  - Resume: resume.pdf
-  - Contact: contact.md
+  - Projects:
+      - RAG Research Backend: projects/rag.md
+      - Indian Art Music Separation: projects/music.md
+      - Maya Voice Assistant: projects/maya.md
+  - Resume & Contact: contact.md
 
 markdown_extensions:
-  # Python Markdown
-  - abbr
   - admonition
   - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - toc:
-      permalink: true
-
-  # Python Markdown Extensions
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
   - pymdownx.details
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
-
-plugins:
-  - search:
-      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-  - minify:
-      minify_html: true
-      minify_js: true
-      minify_css: true
-      htmlmin_opts:
-        remove_comments: true
-      cache_safe: true
