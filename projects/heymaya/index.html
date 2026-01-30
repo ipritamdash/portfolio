@@ -1,40 +1,1326 @@
-<!doctype html><html lang=en class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="AI Engineer specializing in production ML systems, real-time inference optimization, and deep learning deployment"><link href=https://ipritamdash.github.io/portfolio/projects/heymaya/ rel=canonical><link rel=icon href=../../assets/images/favicon.png><meta name=generator content="mkdocs-1.6.1, mkdocs-material-9.7.1"><title>HeyMaya: Production LLM Platform for WhatsApp Recruitment - Pritam Dash</title><link rel=stylesheet href=../../assets/stylesheets/main.484c7ddc.min.css><link rel=stylesheet href=../../assets/stylesheets/palette.ab4e12ef.min.css><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback"><style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style><link rel=stylesheet href=../../stylesheets/extra.css><script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script><script id=__analytics>function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config",""),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script><script>"undefined"!=typeof __md_analytics&&__md_analytics()</script></head> <body dir=ltr data-md-color-scheme=slate data-md-color-primary=black data-md-color-accent=teal> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay for=__drawer></label> <div data-md-component=skip> <a href=#heymaya-production-llm-platform-for-whatsapp-recruitment class=md-skip> Skip to content </a> </div> <div data-md-component=announce> </div> <header class=md-header data-md-component=header> <nav class="md-header__inner md-grid" aria-label=Header> <a href=../.. title="Pritam Dash" class="md-header__button md-logo" aria-label="Pritam Dash" data-md-component=logo> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg> </a> <label class="md-header__button md-icon" for=__drawer> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg> </label> <div class=md-header__title data-md-component=header-title> <div class=md-header__ellipsis> <div class=md-header__topic> <span class=md-ellipsis> Pritam Dash </span> </div> <div class=md-header__topic data-md-component=header-topic> <span class=md-ellipsis> HeyMaya: Production LLM Platform for WhatsApp Recruitment </span> </div> </div> </div> <form class=md-header__option data-md-component=palette> <input class=md-option data-md-color-media data-md-color-scheme=slate data-md-color-primary=black data-md-color-accent=teal aria-label="Switch to light mode" type=radio name=__palette id=__palette_0> <label class="md-header__button md-icon" title="Switch to light mode" for=__palette_1 hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg> </label> <input class=md-option data-md-color-media data-md-color-scheme=default data-md-color-primary=white data-md-color-accent=indigo aria-label="Switch to dark mode" type=radio name=__palette id=__palette_1> <label class="md-header__button md-icon" title="Switch to dark mode" for=__palette_0 hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg> </label> </form> <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script> <label class="md-header__button md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg> </label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query aria-label=Search placeholder=Search autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=search-query required> <label class="md-search__icon md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg> </label> <nav class=md-search__options aria-label=Search> <button type=reset class="md-search__icon md-icon" title=Clear aria-label=Clear tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg> </button> </nav> <div class=md-search__suggest data-md-component=search-suggest></div> </form> <div class=md-search__output> <div class=md-search__scrollwrap tabindex=0 data-md-scrollfix> <div class=md-search-result data-md-component=search-result> <div class=md-search-result__meta> Initializing search </div> <ol class=md-search-result__list role=presentation></ol> </div> </div> </div> </div> </div> <div class=md-header__source> <a href=https://github.com/ipritamdash/portfolio title="Go to repository" class=md-source data-md-component=source> <div class="md-source__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 512 512"><!-- Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg> </div> <div class=md-source__repository> ipritamdash </div> </a> </div> </nav> </header> <div class=md-container data-md-component=container> <nav class=md-tabs aria-label=Tabs data-md-component=tabs> <div class=md-grid> <ul class=md-tabs__list> <li class=md-tabs__item> <a href=../.. class=md-tabs__link> Home </a> </li> <li class=md-tabs__item> <a href=../ class=md-tabs__link> Projects </a> </li> <li class=md-tabs__item> <a href=../../resume.pdf class=md-tabs__link> Resume </a> </li> <li class=md-tabs__item> <a href=../../contact/ class=md-tabs__link> Contact </a> </li> </ul> </div> </nav> <main class=md-main data-md-component=main> <div class="md-main__inner md-grid"> <div class="md-sidebar md-sidebar--primary" data-md-component=sidebar data-md-type=navigation> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--primary md-nav--lifted" aria-label=Navigation data-md-level=0> <label class=md-nav__title for=__drawer> <a href=../.. title="Pritam Dash" class="md-nav__button md-logo" aria-label="Pritam Dash" data-md-component=logo> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg> </a> Pritam Dash </label> <div class=md-nav__source> <a href=https://github.com/ipritamdash/portfolio title="Go to repository" class=md-source data-md-component=source> <div class="md-source__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 512 512"><!-- Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg> </div> <div class=md-source__repository> ipritamdash </div> </a> </div> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../.. class=md-nav__link> <span class=md-ellipsis> Home </span> </a> </li> <li class=md-nav__item> <a href=../ class=md-nav__link> <span class=md-ellipsis> Projects </span> </a> </li> <li class=md-nav__item> <a href=../../resume.pdf class=md-nav__link> <span class=md-ellipsis> Resume </span> </a> </li> <li class=md-nav__item> <a href=../../contact/ class=md-nav__link> <span class=md-ellipsis> Contact </span> </a> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=sidebar data-md-type=toc> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary" aria-label="Table of contents"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"></span> Table of contents </label> <ul class=md-nav__list data-md-component=toc data-md-scrollfix> <li class=md-nav__item> <a href=#overview class=md-nav__link> <span class=md-ellipsis> Overview </span> </a> <nav class=md-nav aria-label=Overview> <ul class=md-nav__list> <li class=md-nav__item> <a href=#key-metrics class=md-nav__link> <span class=md-ellipsis> Key Metrics </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#system-architecture class=md-nav__link> <span class=md-ellipsis> System Architecture </span> </a> <nav class=md-nav aria-label="System Architecture"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#multi-persona-conversation-engine class=md-nav__link> <span class=md-ellipsis> Multi-Persona Conversation Engine </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#technical-implementation class=md-nav__link> <span class=md-ellipsis> Technical Implementation </span> </a> <nav class=md-nav aria-label="Technical Implementation"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#model-fine-tuning class=md-nav__link> <span class=md-ellipsis> Model Fine-Tuning </span> </a> </li> <li class=md-nav__item> <a href=#deployment-architecture class=md-nav__link> <span class=md-ellipsis> Deployment Architecture </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#prompt-engineering class=md-nav__link> <span class=md-ellipsis> Prompt Engineering </span> </a> <nav class=md-nav aria-label="Prompt Engineering"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#context-aware-conversation-management class=md-nav__link> <span class=md-ellipsis> Context-Aware Conversation Management </span> </a> </li> <li class=md-nav__item> <a href=#hallucination-mitigation class=md-nav__link> <span class=md-ellipsis> Hallucination Mitigation </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#performance-optimization class=md-nav__link> <span class=md-ellipsis> Performance Optimization </span> </a> <nav class=md-nav aria-label="Performance Optimization"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#latency-breakdown class=md-nav__link> <span class=md-ellipsis> Latency Breakdown </span> </a> </li> <li class=md-nav__item> <a href=#inference-optimization-strategies class=md-nav__link> <span class=md-ellipsis> Inference Optimization Strategies </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#monitoring-observability class=md-nav__link> <span class=md-ellipsis> Monitoring &amp; Observability </span> </a> </li> <li class=md-nav__item> <a href=#technical-challenges-solutions class=md-nav__link> <span class=md-ellipsis> Technical Challenges &amp; Solutions </span> </a> <nav class=md-nav aria-label="Technical Challenges & Solutions"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#challenge-1-mobile-network-latency class=md-nav__link> <span class=md-ellipsis> Challenge 1: Mobile Network Latency </span> </a> </li> <li class=md-nav__item> <a href=#challenge-2-multi-turn-context-management class=md-nav__link> <span class=md-ellipsis> Challenge 2: Multi-Turn Context Management </span> </a> </li> <li class=md-nav__item> <a href=#challenge-3-dataset-quality class=md-nav__link> <span class=md-ellipsis> Challenge 3: Dataset Quality </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#impact-metrics class=md-nav__link> <span class=md-ellipsis> Impact &amp; Metrics </span> </a> </li> <li class=md-nav__item> <a href=#future-roadmap class=md-nav__link> <span class=md-ellipsis> Future Roadmap </span> </a> </li> <li class=md-nav__item> <a href=#technical-stack-summary class=md-nav__link> <span class=md-ellipsis> Technical Stack Summary </span> </a> </li> <li class=md-nav__item> <a href=#key-learnings class=md-nav__link> <span class=md-ellipsis> Key Learnings </span> </a> <nav class=md-nav aria-label="Key Learnings"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#1-fine-tuning-beats-prompt-engineering-at-scale class=md-nav__link> <span class=md-ellipsis> 1. Fine-Tuning Beats Prompt Engineering at Scale </span> </a> </li> <li class=md-nav__item> <a href=#2-latency-is-product-experience class=md-nav__link> <span class=md-ellipsis> 2. Latency is Product Experience </span> </a> </li> <li class=md-nav__item> <a href=#3-quantization-is-production-critical class=md-nav__link> <span class=md-ellipsis> 3. Quantization is Production-Critical </span> </a> </li> <li class=md-nav__item> <a href=#4-context-window-management-is-underrated class=md-nav__link> <span class=md-ellipsis> 4. Context Window Management is Underrated </span> </a> </li> <li class=md-nav__item> <a href=#5-dataset-quality-dataset-size class=md-nav__link> <span class=md-ellipsis> 5. Dataset Quality &gt; Dataset Size </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#links-resources class=md-nav__link> <span class=md-ellipsis> Links &amp; Resources </span> </a> </li> </ul> </nav> </div> </div> </div> <div class=md-content data-md-component=content> <article class="md-content__inner md-typeset"> <h1 id=heymaya-production-llm-platform-for-whatsapp-recruitment>HeyMaya: Production LLM Platform for WhatsApp Recruitment<a class=headerlink href=#heymaya-production-llm-platform-for-whatsapp-recruitment title="Permanent link">&para;</a></h1> <p><strong>Role:</strong> ML Engineering Advisor | <strong>Stack:</strong> Llama 3.1 8B, QLoRA, AWS SageMaker, vLLM, Docker <strong>Timeline:</strong> Oct 2025 - Present | <strong>Status:</strong> Production (150K+ Users)</p> <p><a class="md-button md-button--primary" href=https://github.com/ipritamdash/hr-ai-project>View Code on GitHub →</a></p> <hr> <h2 id=overview>Overview<a class=headerlink href=#overview title="Permanent link">&para;</a></h2> <p>HeyMaya is a WhatsApp-based AI recruitment platform serving 150,000+ users with conversational HR workflows. Built on fine-tuned Llama 3.1 8B, the system handles multi-persona conversations (HR managers, job candidates, clients, freelancers) with context-aware dialogue management.</p> <h3 id=key-metrics>Key Metrics<a class=headerlink href=#key-metrics title="Permanent link">&para;</a></h3> <table> <thead> <tr> <th style="text-align: left;">Metric</th> <th style="text-align: left;">Achievement</th> </tr> </thead> <tbody> <tr> <td style="text-align: left;"><strong>Active Users</strong></td> <td style="text-align: left;">150,000+</td> </tr> <tr> <td style="text-align: left;"><strong>Response Latency</strong></td> <td style="text-align: left;">&lt;2s (p95: 200ms)</td> </tr> <tr> <td style="text-align: left;"><strong>Hallucination Rate</strong></td> <td style="text-align: left;">&lt;3%</td> </tr> <tr> <td style="text-align: left;"><strong>Daily Conversations</strong></td> <td style="text-align: left;">10,000+</td> </tr> <tr> <td style="text-align: left;"><strong>Model Size</strong></td> <td style="text-align: left;">8B parameters (4-bit quantized)</td> </tr> </tbody> </table> <hr> <h2 id=system-architecture>System Architecture<a class=headerlink href=#system-architecture title="Permanent link">&para;</a></h2> <h3 id=multi-persona-conversation-engine>Multi-Persona Conversation Engine<a class=headerlink href=#multi-persona-conversation-engine title="Permanent link">&para;</a></h3> <p>The platform supports four distinct user types with specialized system prompts and conversation flows:</p> <p><strong>1. HR Manager Flow</strong> - Job posting creation and editing - Candidate screening and filtering - Interview scheduling - Hiring decision support</p> <p><strong>2. Job Candidate Flow</strong> - Profile onboarding (resume parsing) - Job matching and recommendations - Application tracking - Interview preparation</p> <p><strong>3. Client Flow</strong> - Hiring requirements specification - Candidate shortlist review - Contract management - Billing and invoicing</p> <p><strong>4. Freelancer Flow</strong> - Skill verification and portfolio review - Project matching - Payment milestone tracking - Availability management</p> <hr> <h2 id=technical-implementation>Technical Implementation<a class=headerlink href=#technical-implementation title="Permanent link">&para;</a></h2> <h3 id=model-fine-tuning>Model Fine-Tuning<a class=headerlink href=#model-fine-tuning title="Permanent link">&para;</a></h3> <p><strong>Base Model:</strong> Llama 3.1 8B Instruct</p> <p><strong>Training Approach:</strong> - <strong>Method:</strong> QLoRA (4-bit NF4 quantization with LoRA adapters) - <strong>Dataset:</strong> 50,000+ HR conversation turns (synthesized + human-labeled) - <strong>Training Hardware:</strong> AWS SageMaker ml.g5.2xlarge (A10G GPU) - <strong>Training Duration:</strong> 12 hours (8 epochs) - <strong>LoRA Configuration:</strong> r=16, alpha=32, dropout=0.1 - <strong>Target Modules:</strong> q_proj, v_proj, o_proj, gate_proj</p> <p><strong>Training Pipeline:</strong> <div class="language-python highlight"><pre><span></span><code><span id=__span-0-1><a id=__codelineno-0-1 name=__codelineno-0-1 href=#__codelineno-0-1></a><span class=c1># Key training configuration</span>
-</span><span id=__span-0-2><a id=__codelineno-0-2 name=__codelineno-0-2 href=#__codelineno-0-2></a><span class=kn>from</span> <span class=nn>peft</span> <span class=kn>import</span> <span class=n>LoraConfig</span><span class=p>,</span> <span class=n>get_peft_model</span>
-</span><span id=__span-0-3><a id=__codelineno-0-3 name=__codelineno-0-3 href=#__codelineno-0-3></a><span class=kn>from</span> <span class=nn>transformers</span> <span class=kn>import</span> <span class=n>BitsAndBytesConfig</span>
-</span><span id=__span-0-4><a id=__codelineno-0-4 name=__codelineno-0-4 href=#__codelineno-0-4></a>
-</span><span id=__span-0-5><a id=__codelineno-0-5 name=__codelineno-0-5 href=#__codelineno-0-5></a><span class=n>bnb_config</span> <span class=o>=</span> <span class=n>BitsAndBytesConfig</span><span class=p>(</span>
-</span><span id=__span-0-6><a id=__codelineno-0-6 name=__codelineno-0-6 href=#__codelineno-0-6></a>    <span class=n>load_in_4bit</span><span class=o>=</span><span class=kc>True</span><span class=p>,</span>
-</span><span id=__span-0-7><a id=__codelineno-0-7 name=__codelineno-0-7 href=#__codelineno-0-7></a>    <span class=n>bnb_4bit_quant_type</span><span class=o>=</span><span class=s2>&quot;nf4&quot;</span><span class=p>,</span>
-</span><span id=__span-0-8><a id=__codelineno-0-8 name=__codelineno-0-8 href=#__codelineno-0-8></a>    <span class=n>bnb_4bit_use_double_quant</span><span class=o>=</span><span class=kc>True</span><span class=p>,</span>
-</span><span id=__span-0-9><a id=__codelineno-0-9 name=__codelineno-0-9 href=#__codelineno-0-9></a>    <span class=n>bnb_4bit_compute_dtype</span><span class=o>=</span><span class=n>torch</span><span class=o>.</span><span class=n>bfloat16</span>
-</span><span id=__span-0-10><a id=__codelineno-0-10 name=__codelineno-0-10 href=#__codelineno-0-10></a><span class=p>)</span>
-</span><span id=__span-0-11><a id=__codelineno-0-11 name=__codelineno-0-11 href=#__codelineno-0-11></a>
-</span><span id=__span-0-12><a id=__codelineno-0-12 name=__codelineno-0-12 href=#__codelineno-0-12></a><span class=n>lora_config</span> <span class=o>=</span> <span class=n>LoraConfig</span><span class=p>(</span>
-</span><span id=__span-0-13><a id=__codelineno-0-13 name=__codelineno-0-13 href=#__codelineno-0-13></a>    <span class=n>r</span><span class=o>=</span><span class=mi>16</span><span class=p>,</span>
-</span><span id=__span-0-14><a id=__codelineno-0-14 name=__codelineno-0-14 href=#__codelineno-0-14></a>    <span class=n>lora_alpha</span><span class=o>=</span><span class=mi>32</span><span class=p>,</span>
-</span><span id=__span-0-15><a id=__codelineno-0-15 name=__codelineno-0-15 href=#__codelineno-0-15></a>    <span class=n>target_modules</span><span class=o>=</span><span class=p>[</span><span class=s2>&quot;q_proj&quot;</span><span class=p>,</span> <span class=s2>&quot;v_proj&quot;</span><span class=p>,</span> <span class=s2>&quot;o_proj&quot;</span><span class=p>,</span> <span class=s2>&quot;gate_proj&quot;</span><span class=p>],</span>
-</span><span id=__span-0-16><a id=__codelineno-0-16 name=__codelineno-0-16 href=#__codelineno-0-16></a>    <span class=n>lora_dropout</span><span class=o>=</span><span class=mf>0.1</span><span class=p>,</span>
-</span><span id=__span-0-17><a id=__codelineno-0-17 name=__codelineno-0-17 href=#__codelineno-0-17></a>    <span class=n>bias</span><span class=o>=</span><span class=s2>&quot;none&quot;</span><span class=p>,</span>
-</span><span id=__span-0-18><a id=__codelineno-0-18 name=__codelineno-0-18 href=#__codelineno-0-18></a>    <span class=n>task_type</span><span class=o>=</span><span class=s2>&quot;CAUSAL_LM&quot;</span>
-</span><span id=__span-0-19><a id=__codelineno-0-19 name=__codelineno-0-19 href=#__codelineno-0-19></a><span class=p>)</span>
-</span></code></pre></div></p> <p><strong>Dataset Composition:</strong> - Conversational HR dialogues: 35,000 turns - Multi-turn context (3-10 exchanges): 12,000 sequences - Error recovery scenarios: 3,000 turns - Validation set: 5,000 turns</p> <hr> <h3 id=deployment-architecture>Deployment Architecture<a class=headerlink href=#deployment-architecture title="Permanent link">&para;</a></h3> <p><strong>Inference Stack:</strong> - <strong>Framework:</strong> vLLM with PagedAttention - <strong>Quantization:</strong> AWQ 4-bit (post-training optimization) - <strong>Hardware:</strong> AWS SageMaker ml.g5.xlarge (24GB GPU) - <strong>Batching:</strong> Dynamic batching with 50ms timeout - <strong>Caching:</strong> Prefix caching for system prompts</p> <p><strong>Infrastructure:</strong> - <strong>Container:</strong> Custom Docker image with vLLM 0.4.2 - <strong>Endpoint:</strong> SageMaker real-time endpoint with autoscaling - <strong>Load Balancing:</strong> 2-8 instances based on request volume - <strong>Cold Start:</strong> &lt;30 seconds (model pre-loaded in container)</p> <p><strong>API Integration:</strong> - <strong>WhatsApp Business API</strong> for message delivery - <strong>PostgreSQL</strong> for conversation state management - <strong>Redis</strong> for session caching - <strong>AWS Lambda</strong> for webhook handling</p> <hr> <h2 id=prompt-engineering>Prompt Engineering<a class=headerlink href=#prompt-engineering title="Permanent link">&para;</a></h2> <h3 id=context-aware-conversation-management>Context-Aware Conversation Management<a class=headerlink href=#context-aware-conversation-management title="Permanent link">&para;</a></h3> <p>Each conversation maintains a rolling context window optimized for mobile latency:</p> <p><strong>Context Structure:</strong> <div class="language-text highlight"><pre><span></span><code><span id=__span-1-1><a id=__codelineno-1-1 name=__codelineno-1-1 href=#__codelineno-1-1></a>[System Prompt: 200 tokens]
-</span><span id=__span-1-2><a id=__codelineno-1-2 name=__codelineno-1-2 href=#__codelineno-1-2></a>[User Persona: HR Manager]
-</span><span id=__span-1-3><a id=__codelineno-1-3 name=__codelineno-1-3 href=#__codelineno-1-3></a>[Conversation History: Last 5 turns, ~300 tokens]
-</span><span id=__span-1-4><a id=__codelineno-1-4 name=__codelineno-1-4 href=#__codelineno-1-4></a>[Current User Message: ~50 tokens]
-</span><span id=__span-1-5><a id=__codelineno-1-5 name=__codelineno-1-5 href=#__codelineno-1-5></a>---
-</span><span id=__span-1-6><a id=__codelineno-1-6 name=__codelineno-1-6 href=#__codelineno-1-6></a>Total Context: ~550 tokens (target: &lt;800 for &lt;200ms latency)
-</span></code></pre></div></p> <p><strong>Persona-Specific System Prompts:</strong></p> <div class="language-text highlight"><pre><span></span><code><span id=__span-2-1><a id=__codelineno-2-1 name=__codelineno-2-1 href=#__codelineno-2-1></a># HR Manager Prompt (Example)
-</span><span id=__span-2-2><a id=__codelineno-2-2 name=__codelineno-2-2 href=#__codelineno-2-2></a>You are Maya, an AI recruitment assistant helping HR managers.
-</span><span id=__span-2-3><a id=__codelineno-2-3 name=__codelineno-2-3 href=#__codelineno-2-3></a>
-</span><span id=__span-2-4><a id=__codelineno-2-4 name=__codelineno-2-4 href=#__codelineno-2-4></a>Your role:
-</span><span id=__span-2-5><a id=__codelineno-2-5 name=__codelineno-2-5 href=#__codelineno-2-5></a>1. Help create and refine job postings
-</span><span id=__span-2-6><a id=__codelineno-2-6 name=__codelineno-2-6 href=#__codelineno-2-6></a>2. Screen candidates based on requirements
-</span><span id=__span-2-7><a id=__codelineno-2-7 name=__codelineno-2-7 href=#__codelineno-2-7></a>3. Schedule interviews and manage pipelines
-</span><span id=__span-2-8><a id=__codelineno-2-8 name=__codelineno-2-8 href=#__codelineno-2-8></a>4. Provide data-driven hiring insights
-</span><span id=__span-2-9><a id=__codelineno-2-9 name=__codelineno-2-9 href=#__codelineno-2-9></a>
-</span><span id=__span-2-10><a id=__codelineno-2-10 name=__codelineno-2-10 href=#__codelineno-2-10></a>Response guidelines:
-</span><span id=__span-2-11><a id=__codelineno-2-11 name=__codelineno-2-11 href=#__codelineno-2-11></a>- Be professional yet conversational
-</span><span id=__span-2-12><a id=__codelineno-2-12 name=__codelineno-2-12 href=#__codelineno-2-12></a>- Ask clarifying questions when requirements are ambiguous
-</span><span id=__span-2-13><a id=__codelineno-2-13 name=__codelineno-2-13 href=#__codelineno-2-13></a>- Provide structured data (candidate lists, schedules) in clean format
-</span><span id=__span-2-14><a id=__codelineno-2-14 name=__codelineno-2-14 href=#__codelineno-2-14></a>- Keep responses under 100 words for mobile readability
-</span></code></pre></div> <h3 id=hallucination-mitigation>Hallucination Mitigation<a class=headerlink href=#hallucination-mitigation title="Permanent link">&para;</a></h3> <p><strong>Challenge:</strong> LLMs hallucinate job details, candidate information, or company policies.</p> <p><strong>Solution Layers:</strong> 1. <strong>Grounding with Database Retrieval:</strong> All factual claims verified against PostgreSQL 2. <strong>Confidence Scoring:</strong> Model outputs calibrated probability; low-confidence responses trigger human handoff 3. <strong>Template Constraints:</strong> Critical info (job IDs, candidate names) uses structured templates 4. <strong>Fact-Checking Layer:</strong> Post-processing validates entity consistency</p> <p><strong>Result:</strong> Hallucination rate reduced from 18% (base model) to &lt;3% (fine-tuned + guardrails)</p> <hr> <h2 id=performance-optimization>Performance Optimization<a class=headerlink href=#performance-optimization title="Permanent link">&para;</a></h2> <h3 id=latency-breakdown>Latency Breakdown<a class=headerlink href=#latency-breakdown title="Permanent link">&para;</a></h3> <table> <thead> <tr> <th style="text-align: left;">Stage</th> <th style="text-align: left;">P50 Latency</th> <th style="text-align: left;">P95 Latency</th> </tr> </thead> <tbody> <tr> <td style="text-align: left;">WhatsApp Message Receipt</td> <td style="text-align: left;">50ms</td> <td style="text-align: left;">100ms</td> </tr> <tr> <td style="text-align: left;">Lambda Webhook Processing</td> <td style="text-align: left;">20ms</td> <td style="text-align: left;">40ms</td> </tr> <tr> <td style="text-align: left;">SageMaker Inference</td> <td style="text-align: left;">120ms</td> <td style="text-align: left;">200ms</td> </tr> <tr> <td style="text-align: left;">Database State Update</td> <td style="text-align: left;">15ms</td> <td style="text-align: left;">30ms</td> </tr> <tr> <td style="text-align: left;">WhatsApp Message Send</td> <td style="text-align: left;">80ms</td> <td style="text-align: left;">150ms</td> </tr> <tr> <td style="text-align: left;"><strong>Total End-to-End</strong></td> <td style="text-align: left;"><strong>285ms</strong></td> <td style="text-align: left;"><strong>520ms</strong></td> </tr> </tbody> </table> <h3 id=inference-optimization-strategies>Inference Optimization Strategies<a class=headerlink href=#inference-optimization-strategies title="Permanent link">&para;</a></h3> <p><strong>1. Prefix Caching</strong> - System prompts (200 tokens) cached per persona - Saves ~40ms per request</p> <p><strong>2. Dynamic Batching</strong> - Batch incoming requests with 50ms window - Achieves 3-8x throughput increase during peak hours</p> <p><strong>3. Model Quantization</strong> - AWQ 4-bit quantization post-training - Maintains 98% of full-precision quality - Reduces memory footprint from 16GB → 4.5GB</p> <p><strong>4. Speculative Decoding</strong> (Under Testing) - Draft model: Llama 3.2 1B - Target model: Llama 3.1 8B - Expected 1.5-2x speedup for typical responses</p> <hr> <h2 id=monitoring-observability>Monitoring &amp; Observability<a class=headerlink href=#monitoring-observability title="Permanent link">&para;</a></h2> <p><strong>Key Metrics Tracked:</strong> - <strong>Latency:</strong> p50, p95, p99 response times - <strong>Quality:</strong> Hallucination rate (human eval on 500 samples/week) - <strong>Engagement:</strong> Conversation completion rate, user satisfaction (CSAT) - <strong>Reliability:</strong> Endpoint uptime, error rate, retry rate</p> <p><strong>Alerting Thresholds:</strong> - Latency p95 &gt; 500ms → Page on-call - Hallucination rate &gt; 5% → Trigger review - Error rate &gt; 2% → Scale up endpoints</p> <p><strong>Cost Optimization:</strong> - Average cost per conversation: <span class=arithmatex>\(0.003 (inference + infrastructure) - Monthly infrastructure: ~\)</span>2,500 (2-4 SageMaker instances + Lambda + RDS)</p> <hr> <h2 id=technical-challenges-solutions>Technical Challenges &amp; Solutions<a class=headerlink href=#technical-challenges-solutions title="Permanent link">&para;</a></h2> <h3 id=challenge-1-mobile-network-latency>Challenge 1: Mobile Network Latency<a class=headerlink href=#challenge-1-mobile-network-latency title="Permanent link">&para;</a></h3> <p><strong>Problem:</strong> Users on 3G/4G networks experience high variability in message delivery times.</p> <p><strong>Solution:</strong> - Implemented optimistic UI updates (show "Maya is typing..." immediately) - Added retry logic with exponential backoff for message sending - Compressed responses to minimize payload size (&lt;500 characters target)</p> <p><strong>Result:</strong> User-perceived latency reduced by 40% despite unchanged inference time.</p> <hr> <h3 id=challenge-2-multi-turn-context-management>Challenge 2: Multi-Turn Context Management<a class=headerlink href=#challenge-2-multi-turn-context-management title="Permanent link">&para;</a></h3> <p><strong>Problem:</strong> Conversations spanning 20+ turns exceeded context window (4096 tokens), causing context truncation and coherence loss.</p> <p><strong>Solution:</strong> - <strong>Sliding Window:</strong> Keep first turn (user intent) + last 5 turns - <strong>Semantic Compression:</strong> Summarize older turns using smaller model (Llama 3.2 1B) - <strong>Entity Memory:</strong> Extract and preserve key entities (names, job IDs) across truncations</p> <p><strong>Result:</strong> Context coherence maintained across 50+ turn conversations while staying under 800 tokens.</p> <hr> <h3 id=challenge-3-dataset-quality>Challenge 3: Dataset Quality<a class=headerlink href=#challenge-3-dataset-quality title="Permanent link">&para;</a></h3> <p><strong>Problem:</strong> Initial synthetic dataset (GPT-4 generated) had unnatural phrasing and didn't match real user behavior.</p> <p><strong>Solution:</strong> - Bootstrapped with 500 human-labeled conversations - Used base Llama model to generate synthetic expansions - Filtered synthetic data through human review (20% sample rate) - Iteratively fine-tuned and collected production data for retraining</p> <p><strong>Result:</strong> Task completion rate improved from 62% → 87% after second training iteration.</p> <hr> <h2 id=impact-metrics>Impact &amp; Metrics<a class=headerlink href=#impact-metrics title="Permanent link">&para;</a></h2> <p><strong>User Growth:</strong> - Launch (Oct 2025): 1,000 users - Month 2 (Nov 2025): 25,000 users - Current (Jan 2026): 150,000+ users</p> <p><strong>Business Metrics:</strong> - 10,000+ daily conversations - 87% task completion rate - 4.&#8534; average user satisfaction (CSAT) - 68% of candidates prefer WhatsApp over traditional job portals</p> <p><strong>Technical Achievements:</strong> - &lt;2s response latency at 150K user scale - 99.8% endpoint uptime - &lt;3% hallucination rate (validated through human eval) - $0.003 per conversation (10x cheaper than GPT-4 API)</p> <hr> <h2 id=future-roadmap>Future Roadmap<a class=headerlink href=#future-roadmap title="Permanent link">&para;</a></h2> <p><strong>Short-Term (Q1 2026):</strong> - Voice message support (integrate Whisper for ASR) - Multilingual support (Hindi, Tamil) - Resume parsing and skills extraction</p> <p><strong>Medium-Term (Q2 2026):</strong> - Video interview scheduling with calendar integration - Candidate assessment automation (coding challenges, skill tests) - Advanced analytics dashboard for recruiters</p> <p><strong>Long-Term (H2 2026):</strong> - Candidate-job matching with learned embeddings - Predictive hiring success modeling - Integration with HRIS systems (Workday, SAP)</p> <hr> <h2 id=technical-stack-summary>Technical Stack Summary<a class=headerlink href=#technical-stack-summary title="Permanent link">&para;</a></h2> <table> <thead> <tr> <th style="text-align: left;">Component</th> <th style="text-align: left;">Technology</th> <th style="text-align: left;">Purpose</th> </tr> </thead> <tbody> <tr> <td style="text-align: left;"><strong>Base Model</strong></td> <td style="text-align: left;">Llama 3.1 8B Instruct</td> <td style="text-align: left;">Conversational reasoning</td> </tr> <tr> <td style="text-align: left;"><strong>Fine-Tuning</strong></td> <td style="text-align: left;">QLoRA (4-bit NF4)</td> <td style="text-align: left;">Parameter-efficient training</td> </tr> <tr> <td style="text-align: left;"><strong>Inference</strong></td> <td style="text-align: left;">vLLM + AWQ quantization</td> <td style="text-align: left;">Fast, memory-efficient serving</td> </tr> <tr> <td style="text-align: left;"><strong>Deployment</strong></td> <td style="text-align: left;">AWS SageMaker</td> <td style="text-align: left;">Managed ML inference</td> </tr> <tr> <td style="text-align: left;"><strong>Messaging</strong></td> <td style="text-align: left;">WhatsApp Business API</td> <td style="text-align: left;">User communication</td> </tr> <tr> <td style="text-align: left;"><strong>State Management</strong></td> <td style="text-align: left;">PostgreSQL + Redis</td> <td style="text-align: left;">Conversation persistence</td> </tr> <tr> <td style="text-align: left;"><strong>Orchestration</strong></td> <td style="text-align: left;">AWS Lambda + Docker</td> <td style="text-align: left;">Serverless coordination</td> </tr> <tr> <td style="text-align: left;"><strong>Monitoring</strong></td> <td style="text-align: left;">CloudWatch + Custom Dashboard</td> <td style="text-align: left;">Observability</td> </tr> </tbody> </table> <hr> <h2 id=key-learnings>Key Learnings<a class=headerlink href=#key-learnings title="Permanent link">&para;</a></h2> <h3 id=1-fine-tuning-beats-prompt-engineering-at-scale>1. Fine-Tuning Beats Prompt Engineering at Scale<a class=headerlink href=#1-fine-tuning-beats-prompt-engineering-at-scale title="Permanent link">&para;</a></h3> <p>For specialized domains (HR conversations), fine-tuning provides 3-4x quality improvement over GPT-4 with heavy prompting. The model learns domain conventions and reduces verbose instructions.</p> <h3 id=2-latency-is-product-experience>2. Latency is Product Experience<a class=headerlink href=#2-latency-is-product-experience title="Permanent link">&para;</a></h3> <p>Users perceive 300ms responses as "instant," 500ms as "fast," and &gt;1s as "slow." Every 100ms improvement measurably impacts engagement metrics.</p> <h3 id=3-quantization-is-production-critical>3. Quantization is Production-Critical<a class=headerlink href=#3-quantization-is-production-critical title="Permanent link">&para;</a></h3> <p>4-bit quantization enabled single-GPU deployment, reducing infrastructure costs by 75% while maintaining 98% quality. This made the economics viable.</p> <h3 id=4-context-window-management-is-underrated>4. Context Window Management is Underrated<a class=headerlink href=#4-context-window-management-is-underrated title="Permanent link">&para;</a></h3> <p>Naive context handling breaks down after 10-15 turns. Semantic compression and entity memory are essential for coherent long conversations.</p> <h3 id=5-dataset-quality-dataset-size>5. Dataset Quality &gt; Dataset Size<a class=headerlink href=#5-dataset-quality-dataset-size title="Permanent link">&para;</a></h3> <p>500 high-quality human conversations outperformed 10,000 synthetic examples. Investing in data curation yielded higher ROI than model scaling.</p> <hr> <h2 id=links-resources>Links &amp; Resources<a class=headerlink href=#links-resources title="Permanent link">&para;</a></h2> <ul> <li><a href=https://docs.aws.amazon.com/sagemaker/ >AWS SageMaker Deployment Guide</a></li> <li><a href=https://vllm.readthedocs.io/ >vLLM Documentation</a></li> <li><a href=https://arxiv.org/abs/2305.14314>QLoRA Paper (Dettmers et al., 2023)</a></li> </ul> </article> </div> <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script> </div> <button type=button class="md-top md-icon" data-md-component=top hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg> Back to top </button> </main> <footer class=md-footer> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-copyright> Made with <a href=https://squidfunk.github.io/mkdocs-material/ target=_blank rel=noopener> Material for MkDocs </a> </div> <div class=md-social> <a href=https://github.com/ipritamdash target=_blank rel=noopener title=github.com class=md-social__link> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 512 512"><!-- Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg> </a> <a href=https://linkedin.com/in/pritam-dash target=_blank rel=noopener title=linkedin.com class=md-social__link> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><!-- Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg> </a> <a href=mailto:ipritamdash@gmail.com target=_blank rel=noopener title class=md-social__link> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 512 512"><!-- Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg> </a> </div> </div> </div> </footer> </div> <div class=md-dialog data-md-component=dialog> <div class="md-dialog__inner md-typeset"></div> </div> <script id=__config type=application/json>{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script> <script src=../../assets/javascripts/bundle.79ae519e.min.js></script> </body> </html>
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ipritamdash.github.io/portfolio/projects/heymaya/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>HeyMaya: Production LLM Platform for WhatsApp Recruitment - Pritam Dash</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Plus Jakarta Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#heymaya-production-llm-platform-for-whatsapp-recruitment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pritam Dash" class="md-header__button md-logo" aria-label="Pritam Dash" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pritam Dash
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              HeyMaya: Production LLM Platform for WhatsApp Recruitment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="cyan"  aria-label="Switch to Light Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Light Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ipritamdash/portfolio" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ipritamdash
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../rag/" class="md-tabs__link">
+          
+  
+  
+  Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contact/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Resume & Contact
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pritam Dash" class="md-nav__button md-logo" aria-label="Pritam Dash" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Pritam Dash
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ipritamdash/portfolio" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ipritamdash
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG Research Backend
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../music/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indian Art Music Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maya/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maya Voice Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resume & Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multi-persona-conversation-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Persona Conversation Engine
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Implementation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#model-fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Fine-Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deployment-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployment Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt Engineering
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prompt Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#context-aware-conversation-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Context-Aware Conversation Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hallucination-mitigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hallucination Mitigation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Optimization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latency-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latency Breakdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inference-optimization-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inference Optimization Strategies
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoring-observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoring &amp; Observability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-challenges-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Challenges &amp; Solutions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Challenges &amp; Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#challenge-1-mobile-network-latency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge 1: Mobile Network Latency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#challenge-2-multi-turn-context-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge 2: Multi-Turn Context Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#challenge-3-dataset-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge 3: Dataset Quality
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impact &amp; Metrics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Future Roadmap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-stack-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Stack Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-learnings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Learnings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Learnings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-fine-tuning-beats-prompt-engineering-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Fine-Tuning Beats Prompt Engineering at Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-latency-is-product-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Latency is Product Experience
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-quantization-is-production-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Quantization is Production-Critical
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-context-window-management-is-underrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Context Window Management is Underrated
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-dataset-quality-dataset-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Dataset Quality &gt; Dataset Size
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Links &amp; Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="heymaya-production-llm-platform-for-whatsapp-recruitment">HeyMaya: Production LLM Platform for WhatsApp Recruitment</h1>
+<p><strong>Role:</strong> ML Engineering Advisor | <strong>Stack:</strong> Llama 3.1 8B, QLoRA, AWS SageMaker, vLLM, Docker
+<strong>Timeline:</strong> Oct 2025 - Present | <strong>Status:</strong> Production (150K+ Users)</p>
+<p><a class="md-button md-button--primary" href="https://github.com/ipritamdash/hr-ai-project">View Code on GitHub →</a></p>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>HeyMaya is a WhatsApp-based AI recruitment platform serving 150,000+ users with conversational HR workflows. Built on fine-tuned Llama 3.1 8B, the system handles multi-persona conversations (HR managers, job candidates, clients, freelancers) with context-aware dialogue management.</p>
+<h3 id="key-metrics">Key Metrics</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Achievement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Active Users</strong></td>
+<td style="text-align: left;">150,000+</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Response Latency</strong></td>
+<td style="text-align: left;">&lt;2s (p95: 200ms)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hallucination Rate</strong></td>
+<td style="text-align: left;">&lt;3%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Daily Conversations</strong></td>
+<td style="text-align: left;">10,000+</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Model Size</strong></td>
+<td style="text-align: left;">8B parameters (4-bit quantized)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="system-architecture">System Architecture</h2>
+<h3 id="multi-persona-conversation-engine">Multi-Persona Conversation Engine</h3>
+<p>The platform supports four distinct user types with specialized system prompts and conversation flows:</p>
+<p><strong>1. HR Manager Flow</strong>
+- Job posting creation and editing
+- Candidate screening and filtering
+- Interview scheduling
+- Hiring decision support</p>
+<p><strong>2. Job Candidate Flow</strong>
+- Profile onboarding (resume parsing)
+- Job matching and recommendations
+- Application tracking
+- Interview preparation</p>
+<p><strong>3. Client Flow</strong>
+- Hiring requirements specification
+- Candidate shortlist review
+- Contract management
+- Billing and invoicing</p>
+<p><strong>4. Freelancer Flow</strong>
+- Skill verification and portfolio review
+- Project matching
+- Payment milestone tracking
+- Availability management</p>
+<hr />
+<h2 id="technical-implementation">Technical Implementation</h2>
+<h3 id="model-fine-tuning">Model Fine-Tuning</h3>
+<p><strong>Base Model:</strong> Llama 3.1 8B Instruct</p>
+<p><strong>Training Approach:</strong>
+- <strong>Method:</strong> QLoRA (4-bit NF4 quantization with LoRA adapters)
+- <strong>Dataset:</strong> 50,000+ HR conversation turns (synthesized + human-labeled)
+- <strong>Training Hardware:</strong> AWS SageMaker ml.g5.2xlarge (A10G GPU)
+- <strong>Training Duration:</strong> 12 hours (8 epochs)
+- <strong>LoRA Configuration:</strong> r=16, alpha=32, dropout=0.1
+- <strong>Target Modules:</strong> q_proj, v_proj, o_proj, gate_proj</p>
+<p><strong>Training Pipeline:</strong>
+<div class="highlight"><pre><span></span><code><span class="c1"># Key training configuration</span>
+<span class="kn">from</span> <span class="nn">peft</span> <span class="kn">import</span> <span class="n">LoraConfig</span><span class="p">,</span> <span class="n">get_peft_model</span>
+<span class="kn">from</span> <span class="nn">transformers</span> <span class="kn">import</span> <span class="n">BitsAndBytesConfig</span>
+
+<span class="n">bnb_config</span> <span class="o">=</span> <span class="n">BitsAndBytesConfig</span><span class="p">(</span>
+    <span class="n">load_in_4bit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">bnb_4bit_quant_type</span><span class="o">=</span><span class="s2">&quot;nf4&quot;</span><span class="p">,</span>
+    <span class="n">bnb_4bit_use_double_quant</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">bnb_4bit_compute_dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span>
+<span class="p">)</span>
+
+<span class="n">lora_config</span> <span class="o">=</span> <span class="n">LoraConfig</span><span class="p">(</span>
+    <span class="n">r</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
+    <span class="n">lora_alpha</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>
+    <span class="n">target_modules</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;q_proj&quot;</span><span class="p">,</span> <span class="s2">&quot;v_proj&quot;</span><span class="p">,</span> <span class="s2">&quot;o_proj&quot;</span><span class="p">,</span> <span class="s2">&quot;gate_proj&quot;</span><span class="p">],</span>
+    <span class="n">lora_dropout</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="n">bias</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">,</span>
+    <span class="n">task_type</span><span class="o">=</span><span class="s2">&quot;CAUSAL_LM&quot;</span>
+<span class="p">)</span>
+</code></pre></div></p>
+<p><strong>Dataset Composition:</strong>
+- Conversational HR dialogues: 35,000 turns
+- Multi-turn context (3-10 exchanges): 12,000 sequences
+- Error recovery scenarios: 3,000 turns
+- Validation set: 5,000 turns</p>
+<hr />
+<h3 id="deployment-architecture">Deployment Architecture</h3>
+<p><strong>Inference Stack:</strong>
+- <strong>Framework:</strong> vLLM with PagedAttention
+- <strong>Quantization:</strong> AWQ 4-bit (post-training optimization)
+- <strong>Hardware:</strong> AWS SageMaker ml.g5.xlarge (24GB GPU)
+- <strong>Batching:</strong> Dynamic batching with 50ms timeout
+- <strong>Caching:</strong> Prefix caching for system prompts</p>
+<p><strong>Infrastructure:</strong>
+- <strong>Container:</strong> Custom Docker image with vLLM 0.4.2
+- <strong>Endpoint:</strong> SageMaker real-time endpoint with autoscaling
+- <strong>Load Balancing:</strong> 2-8 instances based on request volume
+- <strong>Cold Start:</strong> &lt;30 seconds (model pre-loaded in container)</p>
+<p><strong>API Integration:</strong>
+- <strong>WhatsApp Business API</strong> for message delivery
+- <strong>PostgreSQL</strong> for conversation state management
+- <strong>Redis</strong> for session caching
+- <strong>AWS Lambda</strong> for webhook handling</p>
+<hr />
+<h2 id="prompt-engineering">Prompt Engineering</h2>
+<h3 id="context-aware-conversation-management">Context-Aware Conversation Management</h3>
+<p>Each conversation maintains a rolling context window optimized for mobile latency:</p>
+<p><strong>Context Structure:</strong>
+<div class="highlight"><pre><span></span><code>[System Prompt: 200 tokens]
+[User Persona: HR Manager]
+[Conversation History: Last 5 turns, ~300 tokens]
+[Current User Message: ~50 tokens]
+---
+Total Context: ~550 tokens (target: &lt;800 for &lt;200ms latency)
+</code></pre></div></p>
+<p><strong>Persona-Specific System Prompts:</strong></p>
+<div class="highlight"><pre><span></span><code># HR Manager Prompt (Example)
+You are Maya, an AI recruitment assistant helping HR managers.
+
+Your role:
+1. Help create and refine job postings
+2. Screen candidates based on requirements
+3. Schedule interviews and manage pipelines
+4. Provide data-driven hiring insights
+
+Response guidelines:
+- Be professional yet conversational
+- Ask clarifying questions when requirements are ambiguous
+- Provide structured data (candidate lists, schedules) in clean format
+- Keep responses under 100 words for mobile readability
+</code></pre></div>
+<h3 id="hallucination-mitigation">Hallucination Mitigation</h3>
+<p><strong>Challenge:</strong> LLMs hallucinate job details, candidate information, or company policies.</p>
+<p><strong>Solution Layers:</strong>
+1. <strong>Grounding with Database Retrieval:</strong> All factual claims verified against PostgreSQL
+2. <strong>Confidence Scoring:</strong> Model outputs calibrated probability; low-confidence responses trigger human handoff
+3. <strong>Template Constraints:</strong> Critical info (job IDs, candidate names) uses structured templates
+4. <strong>Fact-Checking Layer:</strong> Post-processing validates entity consistency</p>
+<p><strong>Result:</strong> Hallucination rate reduced from 18% (base model) to &lt;3% (fine-tuned + guardrails)</p>
+<hr />
+<h2 id="performance-optimization">Performance Optimization</h2>
+<h3 id="latency-breakdown">Latency Breakdown</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Stage</th>
+<th style="text-align: left;">P50 Latency</th>
+<th style="text-align: left;">P95 Latency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">WhatsApp Message Receipt</td>
+<td style="text-align: left;">50ms</td>
+<td style="text-align: left;">100ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lambda Webhook Processing</td>
+<td style="text-align: left;">20ms</td>
+<td style="text-align: left;">40ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">SageMaker Inference</td>
+<td style="text-align: left;">120ms</td>
+<td style="text-align: left;">200ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">Database State Update</td>
+<td style="text-align: left;">15ms</td>
+<td style="text-align: left;">30ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">WhatsApp Message Send</td>
+<td style="text-align: left;">80ms</td>
+<td style="text-align: left;">150ms</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total End-to-End</strong></td>
+<td style="text-align: left;"><strong>285ms</strong></td>
+<td style="text-align: left;"><strong>520ms</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="inference-optimization-strategies">Inference Optimization Strategies</h3>
+<p><strong>1. Prefix Caching</strong>
+- System prompts (200 tokens) cached per persona
+- Saves ~40ms per request</p>
+<p><strong>2. Dynamic Batching</strong>
+- Batch incoming requests with 50ms window
+- Achieves 3-8x throughput increase during peak hours</p>
+<p><strong>3. Model Quantization</strong>
+- AWQ 4-bit quantization post-training
+- Maintains 98% of full-precision quality
+- Reduces memory footprint from 16GB → 4.5GB</p>
+<p><strong>4. Speculative Decoding</strong> (Under Testing)
+- Draft model: Llama 3.2 1B
+- Target model: Llama 3.1 8B
+- Expected 1.5-2x speedup for typical responses</p>
+<hr />
+<h2 id="monitoring-observability">Monitoring &amp; Observability</h2>
+<p><strong>Key Metrics Tracked:</strong>
+- <strong>Latency:</strong> p50, p95, p99 response times
+- <strong>Quality:</strong> Hallucination rate (human eval on 500 samples/week)
+- <strong>Engagement:</strong> Conversation completion rate, user satisfaction (CSAT)
+- <strong>Reliability:</strong> Endpoint uptime, error rate, retry rate</p>
+<p><strong>Alerting Thresholds:</strong>
+- Latency p95 &gt; 500ms → Page on-call
+- Hallucination rate &gt; 5% → Trigger review
+- Error rate &gt; 2% → Scale up endpoints</p>
+<p><strong>Cost Optimization:</strong>
+- Average cost per conversation: $0.003 (inference + infrastructure)
+- Monthly infrastructure: ~$2,500 (2-4 SageMaker instances + Lambda + RDS)</p>
+<hr />
+<h2 id="technical-challenges-solutions">Technical Challenges &amp; Solutions</h2>
+<h3 id="challenge-1-mobile-network-latency">Challenge 1: Mobile Network Latency</h3>
+<p><strong>Problem:</strong> Users on 3G/4G networks experience high variability in message delivery times.</p>
+<p><strong>Solution:</strong>
+- Implemented optimistic UI updates (show "Maya is typing..." immediately)
+- Added retry logic with exponential backoff for message sending
+- Compressed responses to minimize payload size (&lt;500 characters target)</p>
+<p><strong>Result:</strong> User-perceived latency reduced by 40% despite unchanged inference time.</p>
+<hr />
+<h3 id="challenge-2-multi-turn-context-management">Challenge 2: Multi-Turn Context Management</h3>
+<p><strong>Problem:</strong> Conversations spanning 20+ turns exceeded context window (4096 tokens), causing context truncation and coherence loss.</p>
+<p><strong>Solution:</strong>
+- <strong>Sliding Window:</strong> Keep first turn (user intent) + last 5 turns
+- <strong>Semantic Compression:</strong> Summarize older turns using smaller model (Llama 3.2 1B)
+- <strong>Entity Memory:</strong> Extract and preserve key entities (names, job IDs) across truncations</p>
+<p><strong>Result:</strong> Context coherence maintained across 50+ turn conversations while staying under 800 tokens.</p>
+<hr />
+<h3 id="challenge-3-dataset-quality">Challenge 3: Dataset Quality</h3>
+<p><strong>Problem:</strong> Initial synthetic dataset (GPT-4 generated) had unnatural phrasing and didn't match real user behavior.</p>
+<p><strong>Solution:</strong>
+- Bootstrapped with 500 human-labeled conversations
+- Used base Llama model to generate synthetic expansions
+- Filtered synthetic data through human review (20% sample rate)
+- Iteratively fine-tuned and collected production data for retraining</p>
+<p><strong>Result:</strong> Task completion rate improved from 62% → 87% after second training iteration.</p>
+<hr />
+<h2 id="impact-metrics">Impact &amp; Metrics</h2>
+<p><strong>User Growth:</strong>
+- Launch (Oct 2025): 1,000 users
+- Month 2 (Nov 2025): 25,000 users
+- Current (Jan 2026): 150,000+ users</p>
+<p><strong>Business Metrics:</strong>
+- 10,000+ daily conversations
+- 87% task completion rate
+- 4.2/5 average user satisfaction (CSAT)
+- 68% of candidates prefer WhatsApp over traditional job portals</p>
+<p><strong>Technical Achievements:</strong>
+- &lt;2s response latency at 150K user scale
+- 99.8% endpoint uptime
+- &lt;3% hallucination rate (validated through human eval)
+- $0.003 per conversation (10x cheaper than GPT-4 API)</p>
+<hr />
+<h2 id="future-roadmap">Future Roadmap</h2>
+<p><strong>Short-Term (Q1 2026):</strong>
+- Voice message support (integrate Whisper for ASR)
+- Multilingual support (Hindi, Tamil)
+- Resume parsing and skills extraction</p>
+<p><strong>Medium-Term (Q2 2026):</strong>
+- Video interview scheduling with calendar integration
+- Candidate assessment automation (coding challenges, skill tests)
+- Advanced analytics dashboard for recruiters</p>
+<p><strong>Long-Term (H2 2026):</strong>
+- Candidate-job matching with learned embeddings
+- Predictive hiring success modeling
+- Integration with HRIS systems (Workday, SAP)</p>
+<hr />
+<h2 id="technical-stack-summary">Technical Stack Summary</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Technology</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Base Model</strong></td>
+<td style="text-align: left;">Llama 3.1 8B Instruct</td>
+<td style="text-align: left;">Conversational reasoning</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Fine-Tuning</strong></td>
+<td style="text-align: left;">QLoRA (4-bit NF4)</td>
+<td style="text-align: left;">Parameter-efficient training</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Inference</strong></td>
+<td style="text-align: left;">vLLM + AWQ quantization</td>
+<td style="text-align: left;">Fast, memory-efficient serving</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Deployment</strong></td>
+<td style="text-align: left;">AWS SageMaker</td>
+<td style="text-align: left;">Managed ML inference</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Messaging</strong></td>
+<td style="text-align: left;">WhatsApp Business API</td>
+<td style="text-align: left;">User communication</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>State Management</strong></td>
+<td style="text-align: left;">PostgreSQL + Redis</td>
+<td style="text-align: left;">Conversation persistence</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Orchestration</strong></td>
+<td style="text-align: left;">AWS Lambda + Docker</td>
+<td style="text-align: left;">Serverless coordination</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Monitoring</strong></td>
+<td style="text-align: left;">CloudWatch + Custom Dashboard</td>
+<td style="text-align: left;">Observability</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="key-learnings">Key Learnings</h2>
+<h3 id="1-fine-tuning-beats-prompt-engineering-at-scale">1. Fine-Tuning Beats Prompt Engineering at Scale</h3>
+<p>For specialized domains (HR conversations), fine-tuning provides 3-4x quality improvement over GPT-4 with heavy prompting. The model learns domain conventions and reduces verbose instructions.</p>
+<h3 id="2-latency-is-product-experience">2. Latency is Product Experience</h3>
+<p>Users perceive 300ms responses as "instant," 500ms as "fast," and &gt;1s as "slow." Every 100ms improvement measurably impacts engagement metrics.</p>
+<h3 id="3-quantization-is-production-critical">3. Quantization is Production-Critical</h3>
+<p>4-bit quantization enabled single-GPU deployment, reducing infrastructure costs by 75% while maintaining 98% quality. This made the economics viable.</p>
+<h3 id="4-context-window-management-is-underrated">4. Context Window Management is Underrated</h3>
+<p>Naive context handling breaks down after 10-15 turns. Semantic compression and entity memory are essential for coherent long conversations.</p>
+<h3 id="5-dataset-quality-dataset-size">5. Dataset Quality &gt; Dataset Size</h3>
+<p>500 high-quality human conversations outperformed 10,000 synthetic examples. Investing in data curation yielded higher ROI than model scaling.</p>
+<hr />
+<h2 id="links-resources">Links &amp; Resources</h2>
+<ul>
+<li><a href="https://docs.aws.amazon.com/sagemaker/">AWS SageMaker Deployment Guide</a></li>
+<li><a href="https://vllm.readthedocs.io/">vLLM Documentation</a></li>
+<li><a href="https://arxiv.org/abs/2305.14314">QLoRA Paper (Dettmers et al., 2023)</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.top", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
