@@ -368,7 +368,7 @@
 
 
     <li class="md-nav__item">
-      <a href="https://github.com/ipritamdash/maya-orphues-whole-pipeline" class="md-nav__link">
+      <a href="maya-orpheus/" class="md-nav__link">
 
 
 
@@ -396,7 +396,7 @@
 
 
     <li class="md-nav__item">
-      <a href="https://github.com/ipritamdash/maya-csm1b-whole-pipeline" class="md-nav__link">
+      <a href="maya-csm/" class="md-nav__link">
 
 
 
@@ -424,7 +424,7 @@
 
 
     <li class="md-nav__item">
-      <a href="https://github.com/ipritamdash/whisper-hindi-lora" class="md-nav__link">
+      <a href="whisper-hindi/" class="md-nav__link">
 
 
 
@@ -800,15 +800,15 @@
 <p>Production systems, research, and foundational ML work.</p>
 <div class="project-grid">
 <div class="project-card">
-<h3 id="maya-orpheus"><a href="https://github.com/ipritamdash/maya-orphues-whole-pipeline">Maya — Voice AI (Orpheus 3B)</a><a class="headerlink" href="#maya-orpheus" title="Permanent link">&para;</a></h3>
+<h3 id="maya-orpheus"><a href="maya-orpheus/">Maya — Voice AI (Orpheus 3B)</a><a class="headerlink" href="#maya-orpheus" title="Permanent link">&para;</a></h3>
 <p>Real-time conversational voice AI on a 3-GPU local pipeline. Orpheus 3B TTS via llama.cpp + Llama 3.2 3B LLM + faster-whisper STT. Sub-800ms time-to-first-audio, UTMOS 4.345 (Q4_K_M). Custom GRPO fine-tune of Orpheus on Expresso, shipped as production LoRA. <a href="https://huggingface.co/Tachyeon/orpheus-3b-conversational-grpo">HF Model</a>.</p>
 </div>
 <div class="project-card">
-<h3 id="maya-csm"><a href="https://github.com/ipritamdash/maya-csm1b-whole-pipeline">Maya — Voice AI (CSM-1B)</a><a class="headerlink" href="#maya-csm" title="Permanent link">&para;</a></h3>
+<h3 id="maya-csm"><a href="maya-csm/">Maya — Voice AI (CSM-1B)</a><a class="headerlink" href="#maya-csm" title="Permanent link">&para;</a></h3>
 <p>Fully self-hosted voice agent on a single GPU. CSM-1B true-streaming TTS with audio humanization (jitter, shimmer, breath synthesis). 780ms direct / 1.3s WebSocket time-to-first-audio. Custom decoder-only fine-tune of CSM-1B on Expresso preserves conversational priors. <a href="https://huggingface.co/Tachyeon/csm-1b-conversational-finetuned">HF Model</a>.</p>
 </div>
 <div class="project-card">
-<h3 id="whisper-hindi"><a href="https://github.com/ipritamdash/whisper-hindi-lora">Whisper Hindi LoRA</a><a class="headerlink" href="#whisper-hindi" title="Permanent link">&para;</a></h3>
+<h3 id="whisper-hindi"><a href="whisper-hindi/">Whisper Hindi LoRA</a><a class="headerlink" href="#whisper-hindi" title="Permanent link">&para;</a></h3>
 <p>LoRA fine-tune of Whisper large-v3-turbo for Hindi ASR. WER 35.56% → 22.25% on FLEURS hi_in (37.4% relative reduction) training only 3.33% of params in 45 min on a single A10G. CTranslate2 INT8 deploy adds only +0.45% WER. <a href="https://huggingface.co/Tachyeon/whisper-large-v3-turbo-hindi-lora">HF Adapter</a>.</p>
 </div>
 <div class="project-card">
